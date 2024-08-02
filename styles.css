@@ -123,6 +123,7 @@ a {
     align-self: stretch;
     flex: 1;
     text-align: center;
+    align-content: center;
 }
 
 .second {
@@ -172,6 +173,7 @@ a {
     align-self: flex-end;
     font-size: 24px;
     font-weight: 700;
+    margin-top: 10px;
 }
 
 .modal {
