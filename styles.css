@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     /* outline: 3px solid red; */
 }
 
 body {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,8 +32,10 @@ main {
 .second, 
 .third,
 .fourth {
-    height: 300px;
+    height: 400px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .first {
@@ -49,12 +53,19 @@ main {
 
 a {
     text-decoration: none;
+    color: #e5e7eb;
 }
 
 ul {
     list-style-type: none;
     display: flex;
     gap: 16px;
+}
+
+p,
+footer,
+a {
+    font-size: 18px;
 }
 
 .container {
@@ -72,26 +83,58 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} 
+
+.header-title {
+    font-size: 24px;
+    color: #f9faf8;
 }
 
-.first {
-    align-items: center; /* ALIGN ITEMS CENTER */
+.first-content {
+    gap: 16px;
+    align-items: center;
 }
 
 .first-text {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
+
+.first-text h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.first-text p,
+.modal-content p,
+.modal-title {
+    color: #e5e7eb;
+}
+
+
 .first-image {
-    width: 400px;
-    height: 150px;
+    /* width: 400px;
+    height: 150px; */
     background-color: white;
+    align-self: stretch;
     flex: 1;
+    text-align: center;
 }
 
 .second {
     text-align: center;
     flex-direction: column;
-    justify-content: center;
+    gap: 12px;
+}
+
+.second-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1f2937;
 }
 
 .second-content {
@@ -109,7 +152,8 @@ ul {
     background-color: white;
     border: 3px solid rgb(65, 147, 255);
     border-radius: 10px;
-    margin: auto;
+    margin: 0px auto 10px;
+
 }
 
 .third-content {
@@ -117,24 +161,23 @@ ul {
     justify-content: center;
 }
 
-.quote {
+.quote em {
     align-self: center;
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 300;
 }
 
 .cite {
     align-self: flex-end;
-}
-
-.fourth {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .modal {
     max-width: 800px;
     height: 120px;
-    background-color: aqua;
+    background-color: #3882f6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,9 +187,18 @@ ul {
     flex: 1 1 0;
 }
 
+.modal-title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
 button {
-    width: 100px;
-    padding: 10px 20px;
+    padding: 8px 24px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: 700;
+    border: 2px solid #f9faf8;
+    border-radius: 5px;
 }
 
 footer {
