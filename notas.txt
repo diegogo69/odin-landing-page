@@ -1,0 +1,21 @@
+lorem an enter for lorem text
+lorem29. lorem+number of words
+p*5>lorem29. 5 paragraphs of 29 words of lorem text
+
+&copy; html entity for copyright symbol
+
+For most purposes, flex is set to one of the following values: auto, initial, none, 
+auto: 1 1 auto. grows and shrink. 
+initial: 0 1 auto. does not grows. But shrink
+none: 0 0 auto. does not grows not shrinks. if so, it will overflow
+
+block-level elements default to the height of their content, and in this case there is no content.
+
+flex-box default values
+direction: row
+flex-grow: 0
+flex-shrink: 1
+flex-basis: auto
+justify-content: flex-start
+align-items: stretch
+flex-wrap: nowrap
