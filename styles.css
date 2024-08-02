@@ -110,9 +110,8 @@ a {
 }
 
 .first-text p,
-.modal-content p,
-.modal-title {
-    color: #f9faf8;
+.modal-content p {
+    color: #e5e7eb;
 }
 
 
@@ -192,6 +191,7 @@ a {
 .modal-title {
     font-size: 24px;
     font-weight: 800;
+    color: #f9faf8;
 }
 
 button {
